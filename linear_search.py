@@ -1,4 +1,10 @@
 def linear_search(array, value):
+    """Search for a value in an array using linear/sequential search.
+
+    Return index of value if found; -1 otherwise
+    Time complexity: O(n)
+    Space complexity: O(1)
+    """
     for i in range(len(array)-1):
         if array[i] == value:
             return i
