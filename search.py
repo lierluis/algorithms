@@ -5,7 +5,7 @@ def linear_search(input_list, value):
     Time complexity: O(n)
     Space complexity: O(1)
     """
-    for i in range(len(input_list)-1):
+    for i in range(len(input_list)):
         if input_list[i] == value:
             return i
     return -1
@@ -34,7 +34,7 @@ def binary_search(input_list, value):
 test_list = [1,3,9,11,15,19,29]
 test_value1 = 25
 test_value2 = 15
-print linear_search("Linear search:", test_list, test_value1)
-print linear_search("Linear search:", test_list, test_value2)
-print binary_search("Binary search:", test_list, test_value1)
-print binary_search("Binary search:", test_list, test_value2)
+print "Linear search:", linear_search(test_list, test_value1)
+print "Linear search:", linear_search(test_list, test_value2)
+print "Binary search:", binary_search(test_list, test_value1)
+print "Binary search:", binary_search(test_list, test_value2)
