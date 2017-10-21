@@ -36,7 +36,6 @@ class Stack(object):
 
 
 # Test cases
-# Set up some Nodes
 n1 = Node(1)
 n2 = Node(2)
 n3 = Node(3)
@@ -48,9 +47,9 @@ stack = Stack(n1)
 # Test stack functionality
 stack.push(n2)
 stack.push(n3)
-print stack.pop().value
-print stack.pop().value
-print stack.pop().value
-print stack.pop()
+print(stack.pop().value)
+print(stack.pop().value)
+print(stack.pop().value)
+print(stack.pop())
 stack.push(n4)
-print stack.pop().value
+print(stack.pop().value)
