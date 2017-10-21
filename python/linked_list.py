@@ -61,33 +61,25 @@ class LinkedList(object):
                         current = current.next
 
 # Test cases
-# Set up some Nodes
 n1 = Node(1)
 n2 = Node(2)
 n3 = Node(3)
 n4 = Node(4)
 
-# Start setting up a LinkedList
 ll = LinkedList(n1)
 ll.append(n2)
 ll.append(n3)
 
 # Test get_position
-# Should print 3
-print ll.head.next.next.value
-# Should also print 3
-print ll.get_position(3).value
+print(ll.head.next.next.value) # 3
+print(ll.get_position(3).value) # 3
 
 # Test insert
 ll.insert(n4,3)
-# Should print 4 now
-print ll.get_position(3).value
+print(ll.get_position(3).value) # 4
 
 # Test delete
 ll.delete(1)
-# Should print 2 now
-print ll.get_position(1).value
-# Should print 4 now
-print ll.get_position(2).value
-# Should print 3 now
-print ll.get_position(3).value
+print(ll.get_position(1).value) # 2
+print(ll.get_position(2).value) # 4
+print(ll.get_position(3).value) # 3
