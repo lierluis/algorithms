@@ -10,7 +10,6 @@ def is_palindrome(input_string):
             return False
     return True
 
-print(is_palindrome("madam")) # true
-print(is_palindrome("aabb")) # false
-print(is_palindrome("race car")) # false
-print(is_palindrome("")) # true
+tests = ["madam", "aabb", "race car", ""]
+for test in tests:
+    print("\"{}\" is a palindrome? {}".format(test, is_palindrome(test)))
