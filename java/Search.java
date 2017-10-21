@@ -1,5 +1,14 @@
 public class Search {
 
+    /**
+     * This method searches for an integer in a sorted array using binary search.
+     * <p>
+     * Time complexity: O(nlogn) | Space complexity: O(n)
+     *
+     * @param arr   the array to be searched, which should be sorted
+     * @param value the value to search for
+     * @return      the index of the value if found; -1 otherwise
+     */
     public static int binarySearch(int[] arr, int value) {
         int low = 0;
         int high = arr.length - 1;
