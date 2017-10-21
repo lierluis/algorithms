@@ -10,6 +10,7 @@ def is_palindrome(input_string):
             return False
     return True
 
-tests = ["madam", "aabb", "race car", ""]
-for test in tests:
-    print("\"{}\" is a palindrome? {}".format(test, is_palindrome(test)))
+if __name__ == "__main__":
+    tests = ["madam", "aabb", "race car", ""]
+    for test in tests:
+        print("\"{}\" is a palindrome? {}".format(test, is_palindrome(test)))

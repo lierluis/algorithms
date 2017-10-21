@@ -34,22 +34,22 @@ class Stack(object):
         "Pop (remove) the first node off the top of the stack and return it"
         return self.ll.delete_first()
 
+if __name__ == "__main__":
+    # Test cases
+    n1 = Node(1)
+    n2 = Node(2)
+    n3 = Node(3)
+    n4 = Node(4)
 
-# Test cases
-n1 = Node(1)
-n2 = Node(2)
-n3 = Node(3)
-n4 = Node(4)
+    # Start setting up a Stack
+    stack = Stack(n1)
 
-# Start setting up a Stack
-stack = Stack(n1)
-
-# Test stack functionality
-stack.push(n2)
-stack.push(n3)
-print(stack.pop().value)
-print(stack.pop().value)
-print(stack.pop().value)
-print(stack.pop())
-stack.push(n4)
-print(stack.pop().value)
+    # Test stack functionality
+    stack.push(n2)
+    stack.push(n3)
+    print(stack.pop().value)
+    print(stack.pop().value)
+    print(stack.pop().value)
+    print(stack.pop())
+    stack.push(n4)
+    print(stack.pop().value)

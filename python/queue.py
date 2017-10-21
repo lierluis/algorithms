@@ -14,22 +14,22 @@ class Queue:
         """Remove node from the head of the queue."""
         return self.storage.pop(0)
 
+if __name__ == "__main__":
+    # Tests
+    q = Queue(1)
+    q.enqueue(2)
+    q.enqueue(3)
 
-# Tests
-q = Queue(1)
-q.enqueue(2)
-q.enqueue(3)
+    # Test peek
+    print(q.peek()) # 1
 
-# Test peek
-print(q.peek()) # 1
+    # Test dequeue
+    print(q.dequeue()) # 1
 
-# Test dequeue
-print(q.dequeue()) # 1
-
-# Test enqueue
-q.enqueue(4)
-print(q.dequeue()) # 2
-print(q.dequeue()) # 3
-print(q.dequeue()) # 4
-q.enqueue(5)
-print(q.peek()) # 5
+    # Test enqueue
+    q.enqueue(4)
+    print(q.dequeue()) # 2
+    print(q.dequeue()) # 3
+    print(q.dequeue()) # 4
+    q.enqueue(5)
+    print(q.peek()) # 5

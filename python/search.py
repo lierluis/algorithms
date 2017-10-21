@@ -31,10 +31,11 @@ def binary_search(input_list, value):
     return -1
 
 
-test_list = [1,3,9,11,15,19,29]
-test_value1 = 25
-test_value2 = 15
-print("Linear search:", linear_search(test_list, test_value1))
-print("Linear search:", linear_search(test_list, test_value2))
-print("Binary search:", binary_search(test_list, test_value1))
-print("Binary search:", binary_search(test_list, test_value2))
+if __name__ == "__main__":
+    test_list = [1,3,9,11,15,19,29]
+    test_value1 = 25
+    test_value2 = 15
+    print("Linear search:", linear_search(test_list, test_value1))
+    print("Linear search:", linear_search(test_list, test_value2))
+    print("Binary search:", binary_search(test_list, test_value1))
+    print("Binary search:", binary_search(test_list, test_value2))

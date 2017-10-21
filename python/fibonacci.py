@@ -60,8 +60,9 @@ def recursive_fibonacci(position):
         return position
     return recursive_fibonacci(position-1) + recursive_fibonacci(position-2)
 
-print("Finding 37th position in Fibonacci sequence...")
-print("Concise:  ", concise_fibonacci(37))
-print("Iterative:", iterative_fibonacci(37))
-print("Memoized: ", memoized_fibonacci(37))
-print("Recursive:", recursive_fibonacci(37))
+if __name__ == "__main__":
+    print("Finding 37th position in Fibonacci sequence...")
+    print("Concise:  ", concise_fibonacci(37))
+    print("Iterative:", iterative_fibonacci(37))
+    print("Memoized: ", memoized_fibonacci(37))
+    print("Recursive:", recursive_fibonacci(37))

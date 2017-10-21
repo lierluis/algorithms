@@ -16,7 +16,8 @@ def bubble_sort(input_list):
                 swapped = True
         list_length -= 1
 
-test_list = [8, 1, 3, 0, 7, 2, 10]
-print("Unsorted:", test_list)
-bubble_sort(test_list)
-print("  Sorted:", test_list)
+if __name__ == "__main__":
+    test_list = [8, 1, 3, 0, 7, 2, 10]
+    print("Unsorted:", test_list)
+    bubble_sort(test_list)
+    print("  Sorted:", test_list)
