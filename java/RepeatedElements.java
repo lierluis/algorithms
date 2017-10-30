@@ -5,7 +5,6 @@ public class RepeatedElements {
      * Tihs method checks for duplicate numbers in an array.
      * <p>
      * Time complexity: O(nlogn) | Space complexity: O(n)
-     * <p>
      *
      * @param numbers the array of numbers to search through
      * @return        the string representation of duplicate elements in the array
