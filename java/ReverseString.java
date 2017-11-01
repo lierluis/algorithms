@@ -2,6 +2,8 @@ public class ReverseString {
 
     /**
      * This function reverses a string literal.
+     * <p>
+     * Time complexity: O(n) | Space complexity: O(n)
      *
      * @param str the string literal
      * @return    the string str reversed
