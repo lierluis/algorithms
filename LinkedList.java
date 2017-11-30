@@ -37,6 +37,19 @@ public class LinkedList {
         this.print();
     }
 
+    /**
+     * This method adds a node to the front of a linked list.
+     * <p>
+     * Time complexity: O(1) | Space complexity: O(1)
+     *
+     * @param newNode the new node to add to the beginning of the linked list
+     */
+    public void addToHead(Node newNode) {
+        newNode.next = head;
+        head = newNode;
+        this.print();
+    }
+
     public void print() {
         Node current = head;
         while (current != null) {
@@ -51,5 +64,7 @@ public class LinkedList {
         ll.add(new Node(1));
         ll.add(new Node(2));
         ll.add(new Node(3));
+        ll.addToHead(new Node(0));
+        ll.add(new Node(4));
     }
 }
