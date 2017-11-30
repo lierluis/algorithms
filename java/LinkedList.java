@@ -8,6 +8,7 @@ class Node {
 }
 
 public class LinkedList {
+
     Node head;
 
     public LinkedList() {
@@ -71,6 +72,26 @@ public class LinkedList {
         this.print();
     }
 
+    /**
+     * This method removes the last node from the linked list.
+     * <p>
+     * Time complexity: O(n) | Space complexity: O(1)
+     */
+    public void removeTail() {
+        if (head == null || head.next == null) {
+            head = null;
+        } else {
+            Node current = head;
+            Node next = current.next;
+            while (next.next != null) {
+                current = next;
+                next = next.next;
+            }
+            current.next = null;
+        }
+        this.print();
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.add(new Node(1));
@@ -79,5 +100,6 @@ public class LinkedList {
         ll.addToHead(new Node(0));
         ll.add(new Node(4));
         ll.removeHead();
+        ll.removeTail();
     }
 }
