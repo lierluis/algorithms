@@ -59,6 +59,18 @@ public class LinkedList {
         System.out.println();
     }
 
+    /**
+     * This method removes the head from the linked list.
+     * <p>
+     * Time complexity: O(1) | Space complexity: O(1)
+     */
+    public void removeHead() {
+        if (head != null) {
+            head = head.next;
+        }
+        this.print();
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.add(new Node(1));
@@ -66,5 +78,6 @@ public class LinkedList {
         ll.add(new Node(3));
         ll.addToHead(new Node(0));
         ll.add(new Node(4));
+        ll.removeHead();
     }
 }
