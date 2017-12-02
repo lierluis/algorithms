@@ -51,15 +51,6 @@ public class LinkedList {
         this.print();
     }
 
-    public void print() {
-        Node current = head;
-        while (current != null) {
-            System.out.print(current.data + " ");
-            current = current.next;
-        }
-        System.out.println();
-    }
-
     /**
      * This method removes the head from the linked list.
      * <p>
@@ -138,6 +129,15 @@ public class LinkedList {
             fast = (fast.next).next;
         }
         return slow;
+    }
+
+    public void print() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
