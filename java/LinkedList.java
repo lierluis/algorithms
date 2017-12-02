@@ -92,6 +92,54 @@ public class LinkedList {
         this.print();
     }
 
+    /**
+     * This method finds the middle node of a linked list (naive approach).
+     * <p>
+     * Time complexity: O(n) | Space complexity: O(1)
+     *
+     * @return the middle node
+     */
+    public Node findMiddleNode() {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        // count nodes in linked list
+        Node current = head;
+        int count = 1;
+        while (current.next != null) {
+            current = current.next;
+            count++;
+        }
+
+        // move to middle node
+        current = head;
+        for (int i = 0; i < (count-1)/2; i++) {
+            current = current.next;
+        }
+        return current;
+    }
+
+    /**
+     * This method finds the middle node of a linked list in a single pass.
+     * <p>
+     * Time complexity: O(n) | Space complexity: O(1)
+     *
+     * @return the middle node
+     */
+    public Node findMiddleNodeV2() {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node slow = head;
+        Node fast = head;
+        while (fast.next != null && (fast.next).next != null) {
+            slow = slow.next;
+            fast = (fast.next).next;
+        }
+        return slow;
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.add(new Node(1));
@@ -101,5 +149,6 @@ public class LinkedList {
         ll.add(new Node(4));
         ll.removeHead();
         ll.removeTail();
+        System.out.printf("Middle node: %d%n", ll.findMiddleNodeV2().data);
     }
 }
