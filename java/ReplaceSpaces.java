@@ -10,10 +10,10 @@ public class ReplaceSpaces {
      * @return  the string a with spaces replaced by string b
      */
     public static String replace(String a, String b) {
-        if (b == null || a == null) {
+        if (a == null || b == null) {
             return a;
         }
-        StringBuilder sb = new StringBuilder(a.length());
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < a.length(); i++) {
             char c = a.charAt(i);
             if (c == ' ') {
