@@ -14,8 +14,7 @@ public class ReplaceSpaces {
             return a;
         }
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < a.length(); i++) {
-            char c = a.charAt(i);
+        for (char c : a.toCharArray()) {
             if (c == ' ') {
                 sb.append(b);
             } else {
