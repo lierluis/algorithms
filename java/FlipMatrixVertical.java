@@ -1,4 +1,4 @@
-public class MatrixFlip {
+public class FlipMatrixVertical {
 
     /**
      * This method flips an mxn 2D matrix in-place along its vertical axis.
