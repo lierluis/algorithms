@@ -41,8 +41,8 @@ public class UniqueString {
             return true;
         }
         Set<Character> set = new HashSet<>();
-        for (int i = 0; i < str.length(); i++) {
-            if(!set.add(str.charAt(i))) {
+        for (char c : str.toCharArray()) {
+            if (!set.add(c)) {
                 return false;
             }
         }
