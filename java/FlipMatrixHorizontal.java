@@ -1,7 +1,5 @@
 
 public class FlipMatrixHorizontal {
-    // java.util.* has been imported for this problem.
-// You don't need any other imports.
 
     /**
      * This method flips a matrix on its horizontal axis.
