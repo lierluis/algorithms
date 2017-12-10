@@ -20,8 +20,8 @@ public class FlipMatrixVertical {
 
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
-            for (int num : row) {
-                System.out.print(num + " ");
+            for (int col : row) {
+                System.out.print(col + " ");
             }
             System.out.println();
         }
