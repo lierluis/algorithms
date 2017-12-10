@@ -11,11 +11,12 @@ public class FlipMatrixHorizontal {
      * @param matrix the matrix to be flipped
      */
     public static void flipHorizontalAxis(int[][] matrix) {
-        for (int row = 0; row < matrix.length / 2; row++) {
-            for (int col = 0; col < matrix[row].length; col++) {
+        int len = matrix.length;
+        for (int row = 0; row < len/2; row++) {
+            for (int col = 0; col < len; col++) {
                 int temp = matrix[row][col];
-                matrix[row][col] = matrix[matrix.length-1-row][col];
-                matrix[matrix.length-1-row][col] = temp;
+                matrix[row][col] = matrix[len-1-row][col];
+                matrix[len-1-row][col] = temp;
             }
         }
     }
