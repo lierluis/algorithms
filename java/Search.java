@@ -3,7 +3,7 @@ public class Search {
     /**
      * This method searches for an integer in a sorted array using binary search.
      * <p>
-     * Time complexity: O(nlogn) | Space complexity: O(n)
+     * Time complexity: O(logn) | Space complexity: O(1)
      *
      * @param arr   the array to be searched, which should be sorted
      * @param value the value to search for
