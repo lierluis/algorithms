@@ -27,43 +27,23 @@ public class BubbleSort {
 }
 
     public static void main(String[] args) {
-        int[] arr = {4,12,4,78,7,-1};
-        int[] arr2 = {4};
-        int[] arr3 = {};
-        int[] arr4 = {52,3,2};
+        int[][] arrs = {
+            {4,12,4,78,7,-1},
+            {4},
+            {},
+            {52,3,2}
+        };
 
-        System.out.println("\narr: ");
-        for (int num : arr) {
-            System.out.print(num + " ");
+        for (int[] arr : arrs) {
+            System.out.println("Unsorted:");
+            for (int num : arr) {
+                System.out.print(num + " ");
+            }
+            System.out.println("\nSorted:");
+            for (int num : bubbleSort(arr)) {
+                System.out.print(num + " ");
+            }
+            System.out.println("\n");
         }
-        System.out.println();
-        for (int num : bubbleSort(arr)) {
-            System.out.print(num + " ");
-        }
-        System.out.println("\narr2:");
-        for (int num : arr2) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-        for (int num : bubbleSort(arr2)) {
-            System.out.print(num + " ");
-        }
-        System.out.println("\narr3:");
-        for (int num : arr3) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-        for (int num : bubbleSort(arr3)) {
-            System.out.print(num + " ");
-        }
-        System.out.println("\narr4:");
-        for (int num : arr4) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-        for (int num : bubbleSort(arr4)) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
     }
 }
