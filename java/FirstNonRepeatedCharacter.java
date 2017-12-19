@@ -32,9 +32,14 @@ public class FirstNonRepeatedCharacter {
     }
 
     public static void main(String[] args) {
-        System.out.println(firstNonRepeatedCharacter("abcdcd")); // a
-        System.out.println(firstNonRepeatedCharacter("aabcdc")); // b
-        System.out.println(firstNonRepeatedCharacter("aaaa")); // null
-        System.out.println(firstNonRepeatedCharacter("b")); // b
+        String[] strings = {
+            "abcdcd", // a
+            "aabcdc", // b
+            "aaaa", // null
+            "b" // b
+        };
+        for (String str : strings) {
+            System.out.println(firstNonRepeatedCharacter(str));
+        }
     }
 }
